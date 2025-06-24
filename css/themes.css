@@ -1,0 +1,51 @@
+:root {
+    /* Vibrant Color Palette */
+    --primary-color: #6C63FF;  /* Purple */
+    --secondary-color: #ffbcee; /* Pink */
+    --accent-color: #00a2bf;   /* Teal */
+    --dark-color: #6f7785;     /* Dark blue-gray */
+    --light-color: #F7FAFC;    /* Light gray */
+    
+    /* Text Colors */
+    --text-color: #2D3748;
+    --text-light: #F7FAFC;
+    
+    /* Backgrounds */
+    --bg-color: #F7FAFC;
+    --card-bg: #FFFFFF;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme {
+    --primary-color: #6C63FF;
+    --secondary-color: #FF6584;
+    --accent-color: #00BFA6;
+    --text-color: #F7FAFC;
+    --bg-color: #1A202C;
+    --card-bg: #2D3748;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark-theme .skill-category,
+.dark-theme .project-card,
+.dark-theme .certificate-card,
+.dark-theme .timeline-content {
+    background-color: #2a2a2a;
+}
+
+.dark-theme .project-tech span {
+    background-color: #3a3a3a;
+    color: #ddd;
+}
+
+.dark-theme .form-group input,
+.dark-theme .form-group textarea {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+    border-color: #444;
+}
+
+.dark-theme .form-group input:focus,
+.dark-theme .form-group textarea:focus {
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.3);
+}
