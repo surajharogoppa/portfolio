@@ -20,6 +20,8 @@
             --bg-color: #F7FAFC;
             --card-bg: #FFFFFF;
             --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            --certificate-bg: rgba(255, 247, 183, 0.88);
+            
         }
 
         .dark-theme {
@@ -30,6 +32,7 @@
             --bg-color: #1A202C;
             --card-bg: #2D3748;
             --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            --certificate-bg: #2D3748;
         }
 
         * {
@@ -298,17 +301,19 @@
             margin-bottom: 8px;
             position: relative;
             padding-left: 20px;
+            font-size: 1rem;
         }
         .skill-category ul li i {
             margin-bottom: 1px;
             position: relative;
             padding-left: 10px;
             color: lime;
+            font-size: 1.2rem;
            
         }
 
         .skill-category ul li::before {
-            content: "▹";
+            content: "🔸";
             position: absolute;
             left: 0;
             color: var(--secondary-color);
@@ -580,9 +585,9 @@
             color: var(--primary-color);
             font-size: 1.7rem;
             margin-left: 100%;
-           
-            
-
+        }
+        .certificate-card a {
+            background-color: var(--certificate-bg);
             
         }
 
@@ -954,19 +959,19 @@
                 <div class="skill-category">
                     <h3>Programming Languages</h3>
                     <ul>
-                        <li>Java<i class="fa-brands fa-java"></i></li>
-                        <li>Python<i class="fa-brands fa-python"></i></li>
-                        <li>C++<i class="fa-solid fa-c"></i></li>
+                        <li>Java <i class="fa-brands fa-java" style="color:rgb(0, 218, 221);"></i></li>
+                        <li>Python<i class="fa-brands fa-python" style="color:rgb(255, 222, 7);"></i></li>
+                        <li>C++ ©️</li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>Frameworks</h3>
                     <ul>
                         <li>Spring Boot<i class='fas fa-seedling'></i></li>
-                        <li>Django<i class="fa-solid fa-laptop-code"></i></li>
-                        <li>LLM Adoption <i class="fa-solid fa-microchip"></i> <br>(Open AI, Gen AI, llama) </li>
-                        <li>Cucumber<i class="fa-solid fa-gears"></i></li>
-                        <li>TestNG<i class="fa-solid fa-gears"></i></li>
+                        <li>Django<i class="fa-solid fa-laptop-code"style="color:rgb(7, 131, 255);"></i></li>
+                        <li>LLM Adoption ❄️ <br>(Open AI, Gen AI, llama) </li>
+                        <li>Cucumber🥒</li>
+                        <li>TestNG ⚙️</li>
                         <li>Junit<i class="fa-solid fa-gears"></i></li>
                         
                        
@@ -975,16 +980,16 @@
                 <div class="skill-category">
                     <h3>Database</h3>
                     <ul>
-                        <li>MySQL <i class="fa-solid fa-database"></i></li>
-                        <li>Oracle <i class="fa-solid fa-database"></i></li>
+                        <li>MySQL <i class="fa-solid fa-database" style="color:rgb(166, 247, 248);"></i></li>
+                        <li>Oracle <i class="fa-solid fa-database" style="color:rgb(166, 247, 248);"></i></li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3>Web Technologies</h3>
                     <ul>
-                        <li>HTML <i class="fa-brands fa-html5"></i></li>
-                        <li>CSS <i class="fa-brands fa-css3-alt"></i></li>
-                        <li>JavaScript <i class="fa-brands fa-js"></i></li>
+                        <li>HTML <i class="fa-brands fa-html5" style="color:rgb(254, 19, 19);"></i></li>
+                        <li>CSS <i class="fa-brands fa-css3-alt" style="color:rgb(40, 144, 255);"></i></li>
+                        <li>JavaScript <i class="fa-brands fa-js" style="color:rgb(174, 255, 0);"></i></li>
                     </ul>
                 </div>
                 
@@ -1214,7 +1219,7 @@
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-date">2016 – 2017</div>
+                    <div class="timeline-date">2017</div>
                     <div class="timeline-content">
                         <h3>SSLC</h3>
                         <p>Government High School Chikkadinakoppa</p>
