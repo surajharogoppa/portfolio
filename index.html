@@ -586,6 +586,7 @@
             font-size: 1.7rem;
             margin-left: 100%;
         }
+        
         .certificate-card a {
             background-color: var(--certificate-bg);
             
@@ -870,6 +871,49 @@
             margin: -10px 0px;
             transition: transform 0.3s ease;
         }
+       /* Updated Scroll Down Indicator */
+.scroll-down {
+    position: fixed;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0.1; /* 40% transparency */
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-down i {
+    font-size: 1.9rem; /* Larger icon */
+    color: var(--primary-color);
+    animation: bounce 2s infinite;
+    transform: scaleX(1.5); /* Horizontally stretch the icon */
+    opacity: 0.4; /* Slightly more visible */
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.scroll-down i:hover {
+    opacity: 0.9; /* Slightly more visible on hover */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) scaleX(1.5);
+    }
+    40% {
+        transform: translateY(-10px) scaleX(1.5);
+    }
+    60% {
+        transform: translateY(-5px) scaleX(1.5);
+    }
+}
+
+/* Keep your existing JavaScript for hiding at bottom */
         
     </style>
 </head>
@@ -1236,10 +1280,10 @@
             <h2>Certificates </h2>
             <div class="certificates-grid">
                 <div class="certificate-card">
-                    <a href="https://testautomationu.applitools.com/certificate/?id=45c9d5e8" target="_blank" class="certificate-card">
-                    <i class="fa-solid fa-certificate " style="color: #FFD43B;"></i>
-                    <h3>Java Programming</h3>
-                    <p>Test Automation University (Applitools)</p>
+                    <a href="https://drive.google.com/file/d/1dNmnABKMPqvlx6T4dcG0y2ekBdZiE5Vd/view?usp=sharing" target="_blank" class="certificate-card">
+                    <i class="fa-solid fa-certificate" style="color: #FFD43B;"></i>
+                    <h3>Full Stack With Java Training</h3>
+                    <p>Besant Technologies Bangalore</p>
                     </a>
                 </div>
                 <div class="certificate-card">
@@ -1267,7 +1311,21 @@
                     <a href="https://courses.cognitiveclass.ai/certificates/bedb2f584cb4461997ae6d2cb368de80" target="_blank" class="certificate-card">
                     <i class="fa-solid fa-certificate " style="color: #FFD43B;"></i>
                     <h3>Prompt Engineering</h3>
-                    <p>Cognitive Class by IBM</p>
+                    <p>Cognitive Class By IBM</p>
+                    </a>
+                </div>
+                 <div class="certificate-card">
+                    <a href="https://testautomationu.applitools.com/certificate/?id=6dc6df5a" target="_blank" class="certificate-card">
+                    <i class="fa-solid fa-certificate " style="color: #FFD43B;"></i>
+                    <h3>Selenium WebDriver with Java</h3>
+                    <p>Applitools</p>
+                    </a>
+                </div>
+                <div class="certificate-card">
+                    <a href="https://testautomationu.applitools.com/certificate/?id=0d3d5aa0" target="_blank" class="certificate-card">
+                    <i class="fa-solid fa-certificate " style="color: #FFD43B;"></i>
+                    <h3>Cucumber With Java</h3>
+                    <p>Applitools</p>
                     </a>
                 </div>
                 <div class="certificate-card">
@@ -1275,13 +1333,6 @@
                     <i class="fa-solid fa-certificate " style="color: #FFD43B;"></i>
                     <h3>Responsive Web Design</h3>
                     <p>Free Code Camp</p>
-                    </a>
-                </div>
-                <div class="certificate-card">
-                    <a href="https://testautomationu.applitools.com/certificate/?id=6dc6df5a" target="_blank" class="certificate-card">
-                    <i class="fa-solid fa-certificate " style="color: #FFD43B;"></i>
-                    <h3>Selenium WebDriver with Java</h3>
-                    <p>Applitools</p>
                     </a>
                 </div>
                 <div class="certificate-card">
@@ -1340,7 +1391,42 @@
         </div>
     </footer>
 
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-down" id="scrollDown">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+
     <script>
+        // Scroll Down Arrow Functionality
+// Scroll Down Arrow Functionality
+const scrollDownArrow = document.getElementById('scrollDown');
+if (scrollDownArrow) {
+    scrollDownArrow.addEventListener('click', () => {
+        window.scrollBy({
+            top: window.innerHeight * 0.8,
+            behavior: 'smooth'
+        });
+    });
+
+    // Hide arrow only when at bottom of page
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+        const distanceFromBottom = documentHeight - (scrollPosition + windowHeight);
+
+        if (distanceFromBottom < 100) { // If within 100px of bottom
+            scrollDownArrow.style.opacity = '0';
+            scrollDownArrow.style.pointerEvents = 'none';
+        } else {
+            scrollDownArrow.style.opacity = '0.8';
+            scrollDownArrow.style.pointerEvents = 'auto';
+        }
+    });
+
+    // Initial check in case page loads at bottom
+    window.dispatchEvent(new Event('scroll'));
+}
         // Add this to your existing JavaScript
 const menuToggle = document.querySelector('.menu-toggle');
 const navMenu = document.querySelector('nav ul');
