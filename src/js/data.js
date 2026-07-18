@@ -84,11 +84,11 @@ export const portfolioData = {
         "Designed modular service handlers to process and route user queries accurately across service types."
       ],
       images: [
-        "./public/images/projects/mindseek-1.jpg",
-        "./public/images/projects/mindseek-2.jpg",
-        "./public/images/projects/mindseek-3.jpg",
-        "./public/images/projects/mindseek-4.jpg",
-        "./public/images/projects/mindseek-5.jpg"
+        "./images/projects/mindseek-1.jpg",
+        "./images/projects/mindseek-2.jpg",
+        "./images/projects/mindseek-3.jpg",
+        "./images/projects/mindseek-4.jpg",
+        "./images/projects/mindseek-5.jpg"
       ],
       tags: ["Python", "Django", "Gemini API", "GenAI Agents"],
       demoUrl: "https://mindseek.onrender.com"
@@ -101,11 +101,11 @@ export const portfolioData = {
         "Implemented role-based authentication and REST APIs, with dashboards for candidates and recruiters and result tracking."
       ],
       images: [
-        "./public/images/projects/hire1.jpg",
-        "./public/images/projects/hire2.jpg",
-        "./public/images/projects/hire3.jpg",
-        "./public/images/projects/hire4.jpg",
-        "./public/images/projects/hire5.jpg"
+        "./images/projects/hire1.jpg",
+        "./images/projects/hire2.jpg",
+        "./images/projects/hire3.jpg",
+        "./images/projects/hire4.jpg",
+        "./images/projects/hire5.jpg"
       ],
       tags: ["React", "Django REST Framework", "REST APIs", "Python"],
       githubUrl: "https://github.com/surajharogoppa"
@@ -118,10 +118,10 @@ export const portfolioData = {
         "Designed a responsive UI to support real-time, intelligent email content generation."
       ],
       images: [
-        "./public/images/projects/smart-1.jpg",
-        "./public/images/projects/smart-2.jpg",
-        "./public/images/projects/smart-3.jpg",
-        "./public/images/projects/smart-4.jpg"
+        "./images/projects/smart-1.jpg",
+        "./images/projects/smart-2.jpg",
+        "./images/projects/smart-3.jpg",
+        "./images/projects/smart-4.jpg"
       ],
       tags: ["Java", "Spring Boot", "Gemini API", "UI Design"],
       demoUrl: "https://smart-compose.onrender.com"
