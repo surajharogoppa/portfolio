@@ -78,20 +78,17 @@ export const portfolioData = {
   projects: [
     {
       id: "01",
-      title: "MindSeek — AI-Powered Utility Chatbot",
+      title: "Automated Deployment Pipeline",
       description: [
-        "Built a Django-based AI chatbot using Gemini API and modular GenAI agents to deliver real-time responses to day-to-day utility service queries.",
-        "Designed modular service handlers to process and route user queries accurately across service types."
+        "Implemented end-to-end deployment automation for web applications using GitHub Actions and Render.",
+        "Containerized applications utilizing Docker best practices for consistent development and production environments.",
+        "Configured CI/CD workflows to automatically build, test, and deploy upon pushing code to the repository."
       ],
       images: [
-        "./images/projects/mindseek-1.jpg",
-        "./images/projects/mindseek-2.jpg",
-        "./images/projects/mindseek-3.jpg",
-        "./images/projects/mindseek-4.jpg",
-        "./images/projects/mindseek-5.jpg"
+        "https://placehold.co/800x600/18181b/ffffff?text=CI/CD+%2B+Docker"
       ],
-      tags: ["Python", "Django", "Gemini API", "GenAI Agents"],
-      demoUrl: "https://mindseek.onrender.com"
+      tags: ["GitHub Actions", "Docker", "CI/CD", "Render"],
+      githubUrl: "https://github.com/surajharogoppa/CICD_Practice"
     },
     {
       id: "02",
@@ -112,6 +109,23 @@ export const portfolioData = {
     },
     {
       id: "03",
+      title: "MindSeek — AI-Powered Utility Chatbot",
+      description: [
+        "Built a Django-based AI chatbot using Gemini API and modular GenAI agents to deliver real-time responses to day-to-day utility service queries.",
+        "Designed modular service handlers to process and route user queries accurately across service types."
+      ],
+      images: [
+        "./images/projects/mindseek-1.jpg",
+        "./images/projects/mindseek-2.jpg",
+        "./images/projects/mindseek-3.jpg",
+        "./images/projects/mindseek-4.jpg",
+        "./images/projects/mindseek-5.jpg"
+      ],
+      tags: ["Python", "Django", "Gemini API", "GenAI Agents"],
+      demoUrl: "https://mindseek.onrender.com"
+    },
+    {
+      id: "04",
       title: "Smart Compose AI — Email Content Generator",
       description: [
         "Built an AI-powered email composition tool (Java, Spring Boot) with tone customization using the Gemini API for dynamic content generation.",
